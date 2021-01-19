@@ -50,7 +50,7 @@ use_kraken_parameter_store = true
 
 use_tls                            = true
 create_load_balancer               = true
-acm_certificate                    = "#certificate_arn#"
+acm_certificate = "arn:aws:acm:us-east-2:259760847234:certificate/e5702242-dd14-4109-96c0-94eadcb51696"
 load_balancer_type                 = "public"                                                 # Should be set to "private" for most internally hosted API's, then fronted with an API GW; public for user-facing websites
 load_balancer_subnet_ids           = ["subnet-09040ac2efded095d", "subnet-03dc7fde006535518", "subnet-08aab82c4b582fe3e"] # Should be private subnets if load_balancer_type is "private"; public subnets if load_balancer_type is "public"
 allow_connections_from_cidr_blocks = ["12.165.188.0/24", "162.252.136.0/21"]                  # What IP space to lock down the load balancer to, default is QL IP space
