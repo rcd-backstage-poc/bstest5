@@ -13,7 +13,7 @@
 zone_id     = "Z3FWRREHSOU50P"
 record_name = "222205-backstage-poc.sandbox.squigglelines.com"
 record_type = "CNAME"
-records     = ["#loadBalancerDnsName#"] #- (Required for non-alias records) A string list of records. 
+records = ["ecs-test-222205-bstest5-2000175517.us-east-2.elb.amazonaws.com"] #- (Required for non-alias records) A string list of records. 
 # To specify a single record value longer than 255 characters such as a TXT record for DKIM, 
 # add \"\" inside the Terraform configuration string (e.g. "first255characters\"\"morecharacters").
 ttl = 300
