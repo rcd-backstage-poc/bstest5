@@ -1,0 +1,80 @@
+{
+	"ipcMode": null,
+	"executionRoleArn": "arn:aws:iam::259760847234:role/QL/ECS/role-prod-222205-bstest5-taskexecution-us-east-2",
+	"containerDefinitions": [
+		{
+			"dnsSearchDomains": null,
+			"environmentFiles": null,
+			"logConfiguration": {
+				"logDriver": "awslogs",
+				"secretOptions": null,
+				"options": {
+					"awslogs-group": "prod-222205-bstest5",
+					"awslogs-region": "us-east-2",
+					"awslogs-stream-prefix": "ecslogs"
+				}
+			},
+			"entryPoint": null,
+			"portMappings": [
+				{
+					"hostPort": 80,
+					"protocol": "tcp",
+					"containerPort": 80
+				}
+			],
+			"command": null,
+			"linuxParameters": null,
+			"cpu": 128,
+			"environment": [
+				{
+					"name": "AppSettings__RockLib_ApplicationId",
+					"value": "222205"
+				},
+				{
+					"name": "AppSettings__RockLib_Environment",
+					"value": "prod"
+				}
+			],
+			"resourceRequirements": null,
+			"ulimits": null,
+			"dnsServers": null,
+			"mountPoints": [],
+			"workingDirectory": null,
+			"secrets": null,
+			"dockerSecurityOptions": null,
+			"memory": null,
+			"memoryReservation": 256,
+			"volumesFrom": [],
+			"stopTimeout": null,
+			"image": "jbilliau/ql-docker-build:latest",
+			"startTimeout": null,
+			"firelensConfiguration": null,
+			"dependsOn": null,
+			"disableNetworking": null,
+			"interactive": null,
+			"healthCheck": null,
+			"essential": true,
+			"links": null,
+			"hostname": null,
+			"extraHosts": null,
+			"pseudoTerminal": null,
+			"user": null,
+			"readonlyRootFilesystem": null,
+			"dockerLabels": null,
+			"systemControls": null,
+			"privileged": null,
+			"name": "prod-222205-bstest5"
+		}
+	],
+	"placementConstraints": [],
+	"memory": "1024",
+	"taskRoleArn": "arn:aws:iam::259760847234:role/QL/ECS/role-prod-222205-bstest5-us-east-2",
+	"family": "prod-222205-bstest5",
+	"pidMode": null,
+	"requiresCompatibilities": ["FARGATE"],
+	"networkMode": "awsvpc",
+	"cpu": "512",
+	"inferenceAccelerators": null,
+	"proxyConfiguration": null,
+	"volumes": []
+}

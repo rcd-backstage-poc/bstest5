@@ -1,0 +1,10 @@
+site_name: 'bstest5'
+
+nav:
+  - Home: index.md
+  - Controllers: controllers.md
+  - Models: models.md
+  - RockLib.Metrics: metrics.md
+
+plugins:
+  - techdocs-core

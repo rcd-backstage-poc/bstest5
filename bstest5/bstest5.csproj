@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ProjectGuid>xJINswoNzOFqRBMyOSzBPQVMvfjWgGkm</ProjectGuid>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+    <Version>1.0.0</Version>
+    <!-- #@project-property-group-root@# -->
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'">
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Accelerators.Framework.Api" Version="2.2002.19943" />
+    <PackageReference Include="AutoMapper" Version="9.0.0" /><!-- conditional in Accelerators -->
+    <PackageReference Include="Dapper" Version="2.0.30" /><!-- conditional in Accelerators -->
+    <PackageReference Include="Kraken.ParameterStore" Version="3.2007.20701" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="4.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.WebSockets" Version="2.2.1" />
+    <!-- <PackageReference Include="RockLib.Encryption.Qks" Version="1.1.0" />conditional in Accelerators -->
+    <PackageReference Include="RockLib.HealthChecks.AspNetCore.ResponseWriter" Version="1.0.0" />
+    <PackageReference Include="RockLib.Logging.DependencyInjection" Version="1.0.2" />
+    <PackageReference Include="RockLib.Logging.Internal" Version="2.0.3" />
+    <!-- <PackageReference Include="RockLib.Messaging.SQS" Version="2.0.4" />conditional in Accelerators -->
+<PackageReference Include="RockLib.Metrics.AspNetCore" Version="1.0.2" />
+    <PackageReference Include="RockLib.Metrics.HttpClient" Version="1.0.2" />
+
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0-rc5" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" />
+  </ItemGroup>
+
+  <!-- #@project-item-groups@# -->
+</Project>
